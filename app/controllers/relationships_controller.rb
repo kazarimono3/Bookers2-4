@@ -22,4 +22,10 @@ class RelationshipsController < ApplicationController
       redirect_to user
     end
   end
+
+    private
+  def
+    @user = User.find(params[:relationship][:follow_id])
+  end
 end
+
